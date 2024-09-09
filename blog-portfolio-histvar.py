@@ -292,5 +292,8 @@ plt.axvline(
     linestyle="--",
     label="ETH Weighted Portfolio 95% VaR",
 )
+# Set x-axis limit 80k - 140k - This will cut off the extreme tails for better visualization
+plt.xlim(left=80000,right=130000)
+
 plt.legend()
 plt.show()
